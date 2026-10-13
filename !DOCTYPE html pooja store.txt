@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Pooja Store</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #fdf8e1; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        h1 { 
+            text-align: center; 
+            color: #d35400; 
+        }
+        .product-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; 
+        }
+        .product-card { 
+            background: white; 
+            border-radius: 10px; 
+            padding: 15px; 
+            width: 220px; 
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        .product-card img { 
+            width: 100%; 
+            border-radius: 5px; 
+            height: 150px; 
+            background-color: #eee;
+            object-fit: cover; 
+        }
+        .product-title {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .price { 
+            color: #e67e22; 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            margin: 10px 0; 
+        }
+        button { 
+            background-color: #e74c3c; 
+            color: white; 
+            border: none; 
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            width: 100%; 
+            transition: 0.3s;
+        }
+        button:hover { 
+            background-color: #c0392b; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🙏 Shubh Pooja Store 🙏</h1>
+
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/220x150?text=Agarbatti" alt="Premium Agarbatti">
+            <div class="product-title">Premium Agarbatti</div>
+            <div class="price">₹120</div>
+            <button onclick="alert('Premium Agarbatti Cart में जुड़ गया!')">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/220x150?text=Pooja+Thali" alt="Brass Pooja Thali">
+            <div class="product-title">Brass Pooja Thali</div>
+            <div class="price">₹450</div>
+            <button onclick="alert('Brass Pooja Thali Cart में जुड़ गई!')">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/220x150?text=Cow+Ghee" alt="Pure Cow Ghee">
+            <div class="product-title">Pure Cow Ghee (500ml)</div>
+            <div class="price">₹350</div>
+            <button onclick="alert('Pure Cow Ghee Cart में जुड़ गया!')">Add to Cart</button>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/220x150?text=Rudraksha" alt="Rudraksha Mala">
+            <div class="product-title">Original Rudraksha Mala</div>
+            <div class="price">₹550</div>
+            <button onclick="alert('Rudraksha Mala Cart में जुड़ गई!')">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
